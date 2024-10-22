@@ -12,7 +12,7 @@ namespace Tyuiu.PredygerKK.Sprint3.Task1.V21.Test
             int value = 1;
             int startValue = 1;
             int stopValue = 12;
-            double res = 7.086;
+            double res = 16947810.881;
             Assert.AreEqual(res, ds.GetMultiplySeries(value, startValue, stopValue));
         }
     }

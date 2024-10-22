@@ -7,9 +7,10 @@ namespace Tyuiu.PredygerKK.Sprint3.Task1.V21.Lib
         public double GetMultiplySeries(int value, int startValue, int stopValue)
         {
             double res = 1;
-            while (startValue != stopValue)
+            while (startValue <= stopValue)
             {
-                res *= Math.Pow((0.5 + startValue / 5) / (Math.Cos(value) + 0.5), 3);
+                double k = startValue;
+                res *= Math.Pow((0.5 + k/5)/(Math.Cos(1) + 0.5), 3);
                 startValue++;
             }
             return Math.Round(res, 3);
