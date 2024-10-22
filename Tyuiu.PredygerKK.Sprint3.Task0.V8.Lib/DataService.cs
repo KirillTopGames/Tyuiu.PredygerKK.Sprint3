@@ -6,10 +6,10 @@ namespace Tyuiu.PredygerKK.Sprint3.Task0.V8.Lib
     {
         public double GetMultiplySeries(double value, int startValue, int stopValue)
         {
-            double res = 0;
+            double res = 1;
             for (int k = startValue; k <= stopValue; k++)
             {
-                res += (Math.Pow(value, k) + 1) * Math.Cos(4); 
+                res *= (Math.Pow(value, k) + 1) * Math.Cos(4); 
             }
             return Math.Round(res, 3);
         }
