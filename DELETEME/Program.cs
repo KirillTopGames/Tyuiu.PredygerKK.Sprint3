@@ -4,21 +4,15 @@
     {
         static void Main(string[] args)
         {
-            int a = 4;
-            int b = 2;
-            int c = 1;
-            int d = 9;
-            int i = 1;
-            do
+            string str = "sxxrrg x vfrx";
+            foreach (char c in str)
             {
-                b++;
-                b = a + c;
-                c = b - a;
-                d = (a + c) - i;
-                i++;
-            } while (i < 4);
-            Console.WriteLine(d);
-
+                if (c == 'x')
+                {
+                    str = str.Replace(c, '2');
+                }
+            }
+            Console.WriteLine(str);
         }
     }
 }
