@@ -10,10 +10,15 @@ namespace Tyuiu.PredygerKK.Sprint3.Task1.V21.Lib
             while (startValue <= stopValue)
             {
                 double k = startValue;
-                res *= Math.Pow((0.5 + k/5)/(Math.Cos(1) + 0.5), 3);
+                res *= Math.Pow((0.5 + k/5)/(Math.Cos(value) + 0.5), 3);
                 startValue++;
             }
             return Math.Round(res, 3);
         }
     }
 }
+
+
+
+
+

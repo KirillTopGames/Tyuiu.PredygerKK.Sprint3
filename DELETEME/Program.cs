@@ -9,15 +9,16 @@
             int c = 1;
             int d = 9;
             int i = 1;
-            while(i < 5)
+            do
             {
-                a--;
-                b -= a;
+                b++;
+                b = a + c;
                 c = b - a;
-                d = (c + a) - i;
+                d = (a + c) - i;
                 i++;
-            }
+            } while (i < 4);
             Console.WriteLine(d);
+
         }
     }
 }
