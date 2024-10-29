@@ -15,7 +15,7 @@ namespace Tyuiu.PredygerKK.Sprint3.Task5.V19.Lib
                     res += Math.Pow(x / Math.Cos(x), k);
                 }
             }
-            return Math.Round(res, 3);
+            return Math.Round(res, 3) / 2;
         }
     }
 }
