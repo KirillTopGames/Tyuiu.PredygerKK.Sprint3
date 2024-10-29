@@ -7,11 +7,17 @@ namespace Tyuiu.PredygerKK.Sprint3.Task4.V29.Lib
         public double Calculate(int startValue, int stopValue)
         {
             double res = 0;
-            int x = -5;
-            while (x != 0 && x <= 5)
+            int x;
+            for (x = startValue; x <= stopValue; x++) 
             {
-                res += Math.Cos(x) / x;
-                x++;
+                if (x == 0)
+                {
+                    continue;
+                }
+                else
+                {
+                    res += Math.Cos(x) / x;
+                }
             }
             return Math.Round(res, 3);
         }
