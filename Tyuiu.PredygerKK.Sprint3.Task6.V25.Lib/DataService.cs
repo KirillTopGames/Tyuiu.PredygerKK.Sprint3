@@ -11,9 +11,12 @@ namespace Tyuiu.PredygerKK.Sprint3.Task6.V25.Lib
             {
                 for(int d = 1; d <= x; d++)
                 {
-                    if(d < 10)
+                    if(x % d == 0)
                     {
-                        sumd += d;
+                        if (d < 10)
+                        {
+                            sumd += d;
+                        }
                     }
                 }
             }
