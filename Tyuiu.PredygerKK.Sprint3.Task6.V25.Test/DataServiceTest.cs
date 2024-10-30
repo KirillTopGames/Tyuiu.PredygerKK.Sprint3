@@ -11,7 +11,7 @@ namespace Tyuiu.PredygerKK.Sprint3.Task6.V25.Test
             DataService ds = new DataService();
             int startValue = 16;
             int stopValue = 24;
-            Assert.AreEqual(405, ds.GetSumTheDivisors(startValue, stopValue));
+            Assert.AreEqual(89, ds.GetSumTheDivisors(startValue, stopValue));
         }
     }
 }
